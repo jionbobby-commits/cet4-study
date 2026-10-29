@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="英语四级备考">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f9d8b"/>
+      <stop offset="1" stop-color="#4f46e5"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <path d="M104 168c46-20 100-20 144 8v192c-44-28-98-28-144-8z" fill="#ffffff" opacity="0.96"/>
+  <path d="M408 168c-46-20-100-20-144 8v192c44-28 98-28 144-8z" fill="#ffffff" opacity="0.82"/>
+  <path d="M256 176v192" stroke="#0f9d8b" stroke-width="8" opacity="0.22"/>
+  <circle cx="368" cy="360" r="76" fill="#ffffff"/>
+  <path d="M330 360l26 26 50-54" fill="none" stroke="#0f9d8b" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

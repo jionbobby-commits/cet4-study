@@ -1,0 +1,189 @@
+{
+"title": "CET-4 原创模拟卷（一）",
+"kind": "mock",
+"duration_sec": 5400,
+"intro": "本卷为原创模拟题，用于熟悉四级题型与节奏，不是官方真题。听力由本机离线语音合成朗读；写作与翻译按参考范文自评。建议一次连续完成，中途不要查词。",
+"source": "原创模拟卷",
+"sections": [
+{
+"title": "Part I 听力理解",
+"type": "listening",
+"intro": "听一段对话，回答 5 个问题。可以重听，但建议最多两遍。",
+"turns": [
+{
+"s": "W",
+"text": "Hello, this is Sunny Travel. How can I help you?"
+},
+{
+"s": "M",
+"text": "Hi, I'm calling about the three-day trip to Hangzhou next month. Is the price still two thousand yuan per person?"
+},
+{
+"s": "W",
+"text": "It was, but from May the price includes the train tickets, so it is two thousand four hundred now."
+},
+{
+"s": "M",
+"text": "I see. Does that include the hotel and breakfast?"
+},
+{
+"s": "W",
+"text": "Yes, two nights in a hotel near the West Lake, with breakfast. Lunch and dinner are not included."
+},
+{
+"s": "M",
+"text": "OK. If I book for four people today, is there any discount?"
+},
+{
+"s": "W",
+"text": "We can take one hundred yuan off each person for groups of four or more."
+},
+{
+"s": "M",
+"text": "Great, I'll book this afternoon."
+}
+],
+"questions": [
+{
+"stem": "Where does the man want to go?",
+"options": [
+"Hangzhou",
+"Suzhou",
+"Beijing",
+"Shanghai"
+],
+"answer": "A",
+"explanation": "three-day trip to Hangzhou。",
+"score": 2
+},
+{
+"stem": "What is the new price per person?",
+"options": [
+"1,900 yuan",
+"2,000 yuan",
+"2,300 yuan",
+"2,400 yuan"
+],
+"answer": "D",
+"explanation": "from May ... two thousand four hundred now。",
+"score": 2
+},
+{
+"stem": "What is included in the price?",
+"options": [
+"Lunch and dinner",
+"Train tickets and hotel with breakfast",
+"Only the hotel",
+"Only the train tickets"
+],
+"answer": "B",
+"explanation": "includes the train tickets ... hotel near the West Lake, with breakfast。",
+"score": 2
+},
+{
+"stem": "How many people will the man book for?",
+"options": [
+"Two",
+"Three",
+"Four",
+"Five"
+],
+"answer": "C",
+"explanation": "book for four people today。",
+"score": 2
+},
+{
+"stem": "How much discount can the man get in total?",
+"options": [
+"100 yuan",
+"200 yuan",
+"400 yuan",
+"500 yuan"
+],
+"answer": "C",
+"explanation": "每人减 100 元，四人共减 400 元。",
+"score": 2
+}
+]
+},
+{
+"title": "Part II 阅读理解",
+"type": "reading",
+"intro": "阅读短文，选择最佳答案。",
+"passage": "Many companies are experimenting with a four-day work week. The idea is simple: employees work fewer hours but are paid the same, on the condition that they finish their tasks. Supporters argue that shorter weeks force people to cut unnecessary meetings and focus on what really matters. In several trials in Europe, workers reported lower stress and better sleep, while productivity stayed the same or even rose.\n\nCritics, however, point out that the results depend heavily on the type of work. A software team may be able to compress its week, but a hospital or a supermarket cannot simply close for an extra day. They also warn that some employees end up working longer hours at home to keep up, which defeats the purpose of the policy.\n\nMost researchers agree on one point: the number of days matters less than how the time is used. A company that removes pointless meetings and gives workers more control over their schedule may gain more than a company that merely shortens the week. For students, the lesson is similar. Studying for six focused hours is often worth more than sitting at a desk for ten distracted ones.",
+"questions": [
+{
+"stem": "What is the main idea of the four-day work week?",
+"options": [
+"Workers earn less but rest more",
+"Workers work fewer hours for the same pay",
+"Companies hire more employees",
+"Companies close one day a week"
+],
+"answer": "B",
+"explanation": "fewer hours but are paid the same。"
+},
+{
+"stem": "What did trials in Europe show?",
+"options": [
+"Productivity fell sharply",
+"Stress increased",
+"Sleep became worse",
+"Productivity stayed the same or rose"
+],
+"answer": "D",
+"explanation": "productivity stayed the same or even rose。"
+},
+{
+"stem": "Why do critics doubt the idea?",
+"options": [
+"It only works for certain types of work",
+"It costs too much money",
+"Workers refuse to accept it",
+"It has never been tested"
+],
+"answer": "A",
+"explanation": "results depend heavily on the type of work；医院、超市无法多关一天。"
+},
+{
+"stem": "What problem may appear according to critics?",
+"options": [
+"Employees may work longer at home",
+"Employees may quit",
+"Customers may complain",
+"Meetings may increase"
+],
+"answer": "A",
+"explanation": "some employees end up working longer hours at home。"
+},
+{
+"stem": "What do most researchers agree on?",
+"options": [
+"Fewer days always mean better results",
+"How time is used matters more than the number of days",
+"Companies should stop having meetings",
+"Students should study ten hours a day"
+],
+"answer": "B",
+"explanation": "the number of days matters less than how the time is used。"
+}
+]
+},
+{
+"title": "Part III 写作",
+"type": "writing",
+"intro": "Write an essay of about 120–180 words.",
+"prompt": "Directions: For this part, you are allowed 30 minutes to write an essay on the importance of time management for college students. You should give reasons and examples. Write at least 120 words but no more than 180 words.",
+"self_score": 15,
+"sample": "Time management is one of the most valuable skills a college student can learn. With classes, part-time jobs and social activities, it is easy to feel busy without making real progress.\n\nGood time management begins with a clear plan. For example, a student who divides a ten-page paper into five small tasks can finish it calmly over a week, while another student who waits until the last night may produce poor work and lose sleep. A plan also protects rest: when we know what must be done today, we can enjoy free time without guilt.\n\nIn short, managing time is not about working longer hours. It is about deciding what matters, doing it first, and leaving space for rest. Students who learn this skill early will benefit from it long after graduation."
+},
+{
+"title": "Part IV 翻译",
+"type": "translation",
+"intro": "将下面的段落翻译成英文，注意句子结构与时态。",
+"prompt": "中国茶文化有着悠久的历史。茶不仅是一种饮品，也是人们交流感情、表达敬意的重要方式。客人来访时，主人常常先泡一壶茶。如今，越来越多的年轻人也开始喜欢喝茶，茶馆在城市中重新流行起来。",
+"self_score": 15,
+"sample": "Chinese tea culture has a long history. Tea is not only a drink but also an important way for people to communicate and show respect. When guests visit, the host often makes a pot of tea first. Today, more and more young people are beginning to enjoy tea, and tea houses are becoming popular in cities again."
+}
+]
+}

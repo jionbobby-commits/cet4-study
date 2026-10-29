@@ -1,0 +1,242 @@
+[
+{
+"title": "短对话：图书馆续借",
+"level": "CET-4",
+"intro": "校园场景短对话，注意数字、时间与请求。",
+"turns": [
+{
+"s": "M",
+"text": "Excuse me, I'd like to renew these two books. Here is my student card."
+},
+{
+"s": "W",
+"text": "Let me check. They are due next Monday, so you can keep them for another two weeks."
+},
+{
+"s": "M",
+"text": "Great. And is it possible to reserve a study room for tomorrow afternoon?"
+},
+{
+"s": "W",
+"text": "Sure, but all the rooms are booked until three o'clock. You can have one from three to six."
+},
+{
+"s": "M",
+"text": "That works for me. I'll take it."
+}
+],
+"translation": "男士想续借两本书，并预订明天下午的自习室。图书管理员说书可以再借两周；自习室在三点前都已订满，三点到六点有空房。",
+"questions": [
+{
+"q": "What does the man want to do first?",
+"options": [
+"Renew two books",
+"Return two books",
+"Borrow magazines",
+"Pay a fine"
+],
+"answer": "A",
+"explanation": "男士第一句说 I'd like to renew these two books，即续借两本书。"
+},
+{
+"q": "When can the man get a study room?",
+"options": [
+"At nine in the morning",
+"At one in the afternoon",
+"At three in the afternoon",
+"At six in the evening"
+],
+"answer": "C",
+"explanation": "管理员说房间都订满到三点，三点到六点可以给他，因此是下午三点。"
+},
+{
+"q": "How long can the man keep the books?",
+"options": [
+"One week",
+"Two weeks",
+"One month",
+"Two months"
+],
+"answer": "B",
+"explanation": "you can keep them for another two weeks，即再借两周。"
+}
+]
+},
+{
+"title": "短对话：兼职面试",
+"level": "CET-4",
+"intro": "求职场景对话，关注工作时间、报酬与入职要求。",
+"turns": [
+{
+"s": "W",
+"text": "Good morning. I'm calling about the part-time job in your cafe."
+},
+{
+"s": "M",
+"text": "Oh yes. Are you available on weekends?"
+},
+{
+"s": "W",
+"text": "I can work on Saturday and Sunday mornings, but I have classes on weekday afternoons."
+},
+{
+"s": "M",
+"text": "That's fine. We need someone from eight to twelve. The pay is fifteen dollars an hour."
+},
+{
+"s": "W",
+"text": "Sounds good. When can I start?"
+},
+{
+"s": "M",
+"text": "How about next Monday? Just bring your ID card."
+}
+],
+"translation": "女士打电话应聘咖啡馆兼职。她周末上午有空，平日下牛有课。对方需要八点到十二点的人手，时薪十五美元，让她下周一来，并带上身份证。",
+"questions": [
+{
+"q": "What job is the woman applying for?",
+"options": [
+"A cafe assistant",
+"A tour guide",
+"A library assistant",
+"A shop manager"
+],
+"answer": "A",
+"explanation": "对话开头 in your cafe 表明是咖啡馆的兼职。"
+},
+{
+"q": "When can the woman work?",
+"options": [
+"Weekday mornings",
+"Weekend mornings",
+"Weekend afternoons",
+"Every evening"
+],
+"answer": "B",
+"explanation": "她说 I can work on Saturday and Sunday mornings，即周末上午。"
+},
+{
+"q": "What should the woman bring on her first day?",
+"options": [
+"A resume",
+"A uniform",
+"Her ID card",
+"A health report"
+],
+"answer": "C",
+"explanation": "最后一句 Just bring your ID card，即带身份证。"
+}
+]
+},
+{
+"title": "短文：在线学习",
+"level": "CET-4",
+"intro": "教育类短文，关注在线学习的优缺点与学习习惯。",
+"turns": [
+{
+"s": "W",
+"text": "Online learning has changed the way many students study. Instead of sitting in a classroom, they can watch lectures at home and pause whenever they need to take notes. This freedom is attractive, but it also requires self-discipline."
+},
+{
+"s": "W",
+"text": "Research shows that students who set a fixed schedule are much more likely to finish a course than those who study whenever they feel like it. Another useful habit is to take part in discussion forums, where learners can ask questions and share ideas."
+},
+{
+"s": "W",
+"text": "Teachers say that the students who succeed online are not always the cleverest ones, but the ones who keep asking and keep practicing. In the end, technology only provides the tools; the effort still comes from the learner."
+}
+],
+"translation": "在线学习让学生可以暂停课程、在家听课，但自由也要求自律。研究显示，制定固定时间表的学生更容易完成课程；参与讨论区也有帮助。老师认为，在线学习成功的关键不是最聪明，而是持续提问和练习。技术只提供工具，努力仍来自学习者。",
+"questions": [
+{
+"q": "What advantage of online learning is mentioned?",
+"options": [
+"It costs less money",
+"It offers flexible time",
+"It makes exams easier",
+"It provides smaller classes"
+],
+"answer": "B",
+"explanation": "短文提到可以随时暂停、在家听课，强调时间灵活。"
+},
+{
+"q": "Which habit helps students finish online courses?",
+"options": [
+"Studying whenever they like",
+"Setting a fixed schedule",
+"Watching each video twice",
+"Taking fewer notes"
+],
+"answer": "B",
+"explanation": "set a fixed schedule are much more likely to finish a course。"
+},
+{
+"q": "According to teachers, which students succeed online?",
+"options": [
+"The cleverest ones",
+"Those who keep asking and practicing",
+"Those with expensive computers",
+"Those who study alone"
+],
+"answer": "B",
+"explanation": "not always the cleverest ones, but the ones who keep asking and keep practicing。"
+}
+]
+},
+{
+"title": "短文：塑料污染",
+"level": "CET-4",
+"intro": "环境类短文，关注海洋塑料污染的成因与个人行动。",
+"turns": [
+{
+"s": "M",
+"text": "Every year, millions of tons of plastic waste end up in the ocean. Some of it floats on the surface, but much of it sinks or breaks into tiny pieces that are almost impossible to collect."
+},
+{
+"s": "M",
+"text": "Sea animals often mistake plastic bags for food. When they eat the plastic, it fills their stomachs and slowly harms them. Scientists have found plastic inside fish, birds and even whales."
+},
+{
+"s": "M",
+"text": "The good news is that ordinary people can help. Carrying a reusable bag, refusing single-use cups and sorting waste correctly are small actions, but they reduce the amount of plastic that reaches the sea. Change begins with daily habits."
+}
+],
+"translation": "每年数百万吨塑料垃圾进入海洋，许多沉入海底或碎成难以收集的微粒。海洋动物常把塑料袋当食物，误食后受到伤害。好消息是普通人也能帮忙：自带购物袋、拒绝一次性杯子、正确分类垃圾，都能减少流入海洋的塑料。改变始于日常习惯。",
+"questions": [
+{
+"q": "What happens to much of the plastic waste?",
+"options": [
+"It is recycled quickly",
+"It is burned at sea",
+"It sinks or breaks into tiny pieces",
+"It is collected by ships"
+],
+"answer": "C",
+"explanation": "much of it sinks or breaks into tiny pieces。"
+},
+{
+"q": "Why do sea animals eat plastic?",
+"options": [
+"It smells good",
+"It looks like food",
+"It is soft and warm",
+"It moves in the water"
+],
+"answer": "B",
+"explanation": "mistake plastic bags for food，即把塑料误认为食物。"
+},
+{
+"q": "What can ordinary people do according to the passage?",
+"options": [
+"Use more plastic bags",
+"Sort waste and use reusable bags",
+"Stop shopping completely",
+"Clean the whole ocean alone"
+],
+"answer": "B",
+"explanation": "Carrying a reusable bag ... and sorting waste correctly。"
+}
+]
+}
+]

@@ -1,0 +1,9 @@
+# 本机数据：数据库、语音缓存、日志、Chrome 配置不进入仓库
+data/
+__pycache__/
+*.py[cod]
+*.log
+*.db
+*.db-shm
+*.db-wal
+.DS_Store

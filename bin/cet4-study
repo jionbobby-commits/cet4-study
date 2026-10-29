@@ -1,0 +1,100 @@
+#!/usr/bin/env bash
+# 英语四级离线备考 —— 启动器
+# 用法：cet4-study [open|browser|start|stop|status|url]
+set -uo pipefail
+
+SELF="$(readlink -f "${BASH_SOURCE[0]}")"
+APP_DIR="$(cd "$(dirname "${SELF}")/.." && pwd)"
+DATA_DIR="${APP_DIR}/data"
+PID_FILE="${DATA_DIR}/server.pid"
+LOG_FILE="${DATA_DIR}/server.log"
+PORT="${CET4_PORT:-8766}"
+URL="http://127.0.0.1:${PORT}"
+PROFILE="${HOME}/.local/share/cet4-study/chrome-profile"
+
+mkdir -p "${DATA_DIR}"
+
+healthy() {
+  curl -fsS --max-time 1 "${URL}/api/health" 2>/dev/null | grep -q '"ok"'
+}
+
+port_pid() {
+  ss -ltnpH "sport = :${PORT}" 2>/dev/null | sed -n 's/.*pid=\([0-9][0-9]*\).*/\1/p' | head -n1
+}
+
+wait_health() {
+  for _ in $(seq 1 80); do
+    healthy && return 0
+    sleep 0.25
+  done
+  return 1
+}
+
+is_ours() {
+  [ -n "$1" ] || return 1
+  tr '\0' '\n' < "/proc/$1/cmdline" 2>/dev/null | grep -Fxq -- "${APP_DIR}/server.py"
+}
+
+start_server() {
+  local old
+  old="$(port_pid)"
+  if healthy; then
+    if [ -z "${old}" ] || is_ours "${old}"; then return 0; fi
+    echo "端口 ${PORT} 上的服务不是本项目（PID ${old}），请换端口：CET4_PORT=... $0" >&2
+    return 1
+  fi
+  if [ -n "${old}" ]; then
+    echo "端口 ${PORT} 已被其他程序占用（PID ${old}），请换端口：CET4_PORT=... $0" >&2
+    return 1
+  fi
+  command -v python3 >/dev/null 2>&1 || { echo "未找到 python3" >&2; return 1; }
+  if command -v setsid >/dev/null 2>&1; then
+    ( cd "${APP_DIR}" && setsid -f python3 "${APP_DIR}/server.py" --port "${PORT}" >>"${LOG_FILE}" 2>&1 </dev/null )
+  else
+    ( cd "${APP_DIR}" && nohup python3 "${APP_DIR}/server.py" --port "${PORT}" >>"${LOG_FILE}" 2>&1 </dev/null & )
+  fi
+  if ! wait_health; then
+    echo "启动失败，请查看日志：${LOG_FILE}" >&2
+    tail -n 20 "${LOG_FILE}" >&2
+    return 1
+  fi
+  port_pid > "${PID_FILE}"
+  return 0
+}
+
+chrome_bin() {
+  for c in google-chrome-stable google-chrome chromium chromium-browser brave-browser microsoft-edge; do
+    if command -v "${c}" >/dev/null 2>&1; then echo "${c}"; return 0; fi
+  done
+  return 1
+}
+
+open_app_window() {
+  local bin
+  if bin="$(chrome_bin)"; then
+    mkdir -p "${PROFILE}"
+    "${bin}" --app="${URL}" --class=CET4Study --user-data-dir="${PROFILE}" \
+      --no-first-run --no-default-browser-check --window-size=1360,900 \
+      >/dev/null 2>&1 &
+  else
+    xdg-open "${URL}" >/dev/null 2>&1 &
+  fi
+}
+
+case "${1:-open}" in
+  start)  start_server && echo "已运行：${URL}" ;;
+  open)   start_server || exit 1; open_app_window; echo "已打开：${URL}" ;;
+  browser) start_server || exit 1; xdg-open "${URL}" >/dev/null 2>&1 & echo "已在浏览器打开：${URL}" ;;
+  status)
+    if healthy; then echo "运行中：${URL}（PID $(port_pid)）"; else echo "未运行"; exit 1; fi ;;
+  url)    start_server || exit 1; echo "${URL}" ;;
+  stop)
+    pid="$(port_pid)"
+    if [ -z "${pid}" ]; then echo "未运行"; exit 0; fi
+    if is_ours "${pid}"; then
+      kill "${pid}" && rm -f "${PID_FILE}" && echo "已停止（PID ${pid}）"
+    else
+      echo "端口 ${PORT} 被其他程序占用（PID ${pid}），未处理" >&2; exit 1
+    fi ;;
+  *) echo "用法：cet4-study [open|browser|start|stop|status|url]" >&2; exit 2 ;;
+esac

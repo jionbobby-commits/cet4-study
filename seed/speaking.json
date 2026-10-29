@@ -1,0 +1,82 @@
+[
+{
+"title": "朗读：时间管理",
+"kind": "read",
+"seconds": 45,
+"prompt": "Read the following passage aloud clearly and at a natural speed.\n\nTime management is one of the most useful skills a college student can develop. Instead of working until late at night before an exam, it is better to divide a big task into smaller parts and finish them day by day. A simple plan, written down and checked every morning, can save hours of worry. Remember that rest is part of the plan, not a reward for finishing it.",
+"tips": "先默读一遍再开口；注意句末降调、短语间停顿；不要回读。",
+"sample": "参考节奏：每句约 4–6 秒，整段 35–45 秒；重读 planning / simple plan 等关键词。"
+},
+{
+"title": "朗读：图书馆通知",
+"kind": "read",
+"seconds": 40,
+"prompt": "Read the following notice aloud.\n\nAttention, students. The main library will be closed this Friday for system maintenance. Books borrowed before Thursday can be returned next Monday without a fine. The study rooms on the second floor remain open, but please keep your voice down and take your belongings with you when you leave.",
+"tips": "通知类朗读要清楚、平稳；数字与时间（Friday, Monday）加重。",
+"sample": "参考：整段 30–40 秒，语速不要过快，句间留半秒停顿。"
+},
+{
+"title": "话题：一位影响你的人",
+"kind": "topic",
+"seconds": 60,
+"prompt": "Describe a person who has influenced you most. You should say who the person is, how you met or know him or her, and explain why this person has influenced you.",
+"tips": "用「观点—例子—感受」三段式；准备时写下 3 个关键词，不要背整篇。",
+"sample": "The person who has influenced me most is my high school English teacher. She never simply gave us answers; instead, she asked us to explain our thinking. Because of her, I learned that making mistakes is part of learning. Her patience encouraged me to keep practicing speaking English, and that habit still helps me today."
+},
+{
+"title": "话题：大学生该不该做兼职",
+"kind": "topic",
+"seconds": 60,
+"prompt": "Some people think college students should take part-time jobs, while others believe study should come first. What is your opinion? Give reasons and examples.",
+"tips": "先亮观点（I believe...），再给两个理由，最后让步一句（Of course, ...）。",
+"sample": "I believe students can benefit from part-time jobs if they manage their time well. First, a job teaches them how to communicate with different people. Second, earning money helps them understand the value of hard work. Of course, study should remain the priority, so working more than ten hours a week may not be wise."
+},
+{
+"title": "话题：学英语的好处",
+"kind": "topic",
+"seconds": 60,
+"prompt": "What are the benefits of learning English for Chinese students? Give at least two reasons and support them with examples.",
+"tips": "用 First / Second / For example 组织；避免只罗列单词。",
+"sample": "Learning English opens two doors for Chinese students. First, it gives us access to a huge amount of information, from research papers to online courses. Second, it helps us communicate with people from other cultures. For example, when I traveled last summer, English allowed me to make friends with a student from Germany."
+},
+{
+"title": "问答：网购还是逛店",
+"kind": "qa",
+"seconds": 60,
+"prompt": "Do you prefer shopping online or going to real stores? Why?\n\nFollow-up: What do you usually buy online, and what do you prefer to buy in a store?",
+"tips": "第一问给明确选择，第二问用具体物品举例；每个问题 2–3 句。",
+"sample": "I prefer shopping online for most things because it saves time and I can compare prices easily. I usually buy books and daily supplies online. However, I like going to stores for clothes, because I need to try them on and check the size."
+},
+{
+"title": "问答：如何应对考前压力",
+"kind": "qa",
+"seconds": 60,
+"prompt": "How do you deal with stress before an exam?\n\nFollow-up: What advice would you give to a classmate who feels very nervous?",
+"tips": "用具体做法（break tasks down, exercise, talk to friends）；follow-up 用 You could...",
+"sample": "Before an exam, I divide the material into small parts and review one part at a time, which makes the task less frightening. I also go running for twenty minutes every evening. If a classmate feels nervous, I would tell him to make a simple plan and to talk to someone instead of staying alone with his worries."
+},
+{
+"title": "话题：放松方式",
+"kind": "topic",
+"seconds": 60,
+"prompt": "Describe your favorite way to relax after a busy day. Explain why it helps you.",
+"tips": "描述细节（where, when, what you do）；说明感受与效果。",
+"sample": "My favorite way to relax is walking along the river near my home after dinner. I leave my phone in my pocket and just watch the water and the lights. It helps me clear my mind, and by the time I get home I can concentrate on my work again."
+},
+{
+"title": "朗读：环保短文",
+"kind": "read",
+"seconds": 45,
+"prompt": "Read the following passage aloud.\n\nSmall habits can make a big difference to the environment. Turning off unused lights, carrying a reusable bag, and sorting waste are simple actions that almost everyone can take. If millions of people do these things every day, the result will be far greater than any single person's effort. The planet does not need a few perfect people; it needs many ordinary people who care.",
+"tips": "排比句注意节奏一致；最后一句放慢并重读 ordinary。",
+"sample": "参考：40–45 秒；三个并列动作之间稍作停顿。"
+},
+{
+"title": "问答：想学的一项技能",
+"kind": "qa",
+"seconds": 60,
+"prompt": "Talk about a skill you would like to learn. Why do you want to learn it, and how would you learn it?\n\nFollow-up: What might be the biggest difficulty?",
+"tips": "技能要具体（photography, swimming, coding）；学习方式说 1–2 个步骤。",
+"sample": "I would like to learn photography because I want to record the places I visit. I would start by watching short lessons online and then practice with my phone every weekend. The biggest difficulty, I think, is patience: good pictures need time and many failures."
+}
+]
